@@ -69,8 +69,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="" class="nav-item nav-link" >Home</a>
-                        <a href="{{ url_for('service') }}" class="nav-item nav-link">Service</a>
+                        <a href="{{ url_for('index') }}" class="nav-item nav-link" >Home</a>
+                      
                         <a href="{{ url_for('analytics') }}" class="nav-item nav-link">Analytics</a>
                         <a href="{{ url_for('learn') }}" class="nav-item nav-link">Learn</a>
                         <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contact Us</a>
@@ -122,7 +122,7 @@
                     <div class="col-lg-7">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
                             <p class="text-center mb-4">Use this form to report any online crime, like hacking or scams. Describe what happened, when it started, and the impact</a>.</p>
-                            <form >
+                            <!-- <form >
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -142,7 +142,7 @@
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
-                                </form>
+                                </form>  -->
                                 <form action="/predict" method="post">
                                     <textarea name="description" rows="4" cols="50" placeholder="Enter attack description" ></textarea><br>
                                     <input type="submit" value="Submit">
@@ -277,7 +277,7 @@
 
 
         <!-- Newsletter Start -->
-        <div class="container-xxl bg-primary newsletter py-5 wow fadeInUp" data-wow-delay="0.1s" id="newsletter">
+        <!-- <div class="container-xxl bg-primary newsletter py-5 wow fadeInUp" data-wow-delay="0.1s" id="newsletter">
             <div class="container py-5 px-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center">
@@ -292,7 +292,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Newsletter End -->
 
 
@@ -546,25 +546,25 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Mahavir Education Trust Chowk, W.T Patil Marg, D P Rd, next to Duke's Company, Chembur, Mumbai, Maharashtra 400088</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>022-25580854</p>
+                        <p><i class="fa fa-envelope me-3"></i>info@sakec.ac.in</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a> -->
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/shahanchor/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/sakec_chembur/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://in.linkedin.com/school/sakec/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
+                        <a class="btn btn-link" href="{{ url_for('about') }}" >About Us</a>
+                        <a class="btn btn-link" href="{{ url_for('contact') }}">Contact Us</a>
+                        <a class="btn btn-link" href="{{ url_for('learn') }}">Learn</a>
+                        <a class="btn btn-link" href="{{ url_for('analytics') }}">Analytics</a>
+                        <a class="btn btn-link" href="{{ url_for('index') }}">Home</a>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <!-- <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Gallery<span></span></p>
                         <div class="row g-2">
                             <div class="col-4">
@@ -586,7 +586,7 @@
                                 <img class="img-fluid" src="static/portfolio-6.jpg" alt="Image">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
                         <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
